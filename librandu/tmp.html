@@ -40,7 +40,7 @@ xmlhttp.send();
 }
 var html= '';
 function showfeed(x){
-x.foreach(show)
+Array.from(x).foreach(show)
 document.getElementById("demo").innerHTML = html;
 }
 
