@@ -1,0 +1,70 @@
+header {
+    background: #c61f1f;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: segoe ui,sans-serif;
+    background: #eee;
+}
+
+a.logolink {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav {
+    display: block;
+}
+
+nav a {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+    box-sizing: border-box;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin:  0 auto;
+}
+
+.feeditem {
+    padding: 10px;
+}
+
+.feedtitle {
+    font-family: georgia, serif;
+    font-style: italic;
+    color: #aaa;
+}
+
+.feedtitle:before {content: " ";width: 5px;height: 3px;display: inline-block;background: #aaa;border-right: 10px solid #aaa;margin-bottom: 4px;margin-right: 6px;margin-left: 10px;}
+
+.feedhtml {background: white;border-radius: 15px;}
+
+.feedhtml a {}
+
+.news a {
+    color: #bc2525;
+    font-size: 22px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.news {
+    background: white;
+    padding: 10px;
+    border-radius: 11px;
+    border: 2px solid #ddd;
+}
