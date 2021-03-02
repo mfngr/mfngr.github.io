@@ -41,7 +41,9 @@ xmlhttp.send();
 var html= '';
 function showfeed(x){
   console.log(x);
-Array.from(x).foreach(show);
+  for (var i = 0, l = data.messages.length; i < l; i++) {
+  }
+x.forEach(show);
 document.getElementById("demo").innerHTML = html;
 }
 
