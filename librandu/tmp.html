@@ -1,0 +1,53 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Librandu &bull; Homepage</title>
+<meta name="description" content="FreshMaza, Download New Bollywood Mp3 Songs Freshmaza, Punjabi Mp3 Songs, Hindi Mp3 Songs, Haryanvi Mp3 Songs Download Free HD Quality FreshMaza Mp3." />
+
+<meta name="geo.placename" content="India" />
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+<body>
+<header>
+<div class="logo"><a href="/librandu" class="logolink">Librandu</a></div>
+<nav>
+<a href="/librandu">Feed</a>
+<a href="/videos">Watch</a>
+<a href="/Tools">Fun &amp; tools</a>
+</nav>
+</header>
+<div class="wrapper">
+<div class="feed">
+<div id="feedx">
+
+</div>
+</div>
+</div>
+<script>
+window.onload =  function() {
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+   showfeed(myObj);
+  }
+};
+
+xmlhttp.open("GET", "feed.json", true);
+xmlhttp.send();
+}
+var html= '';
+function showfeed(x){
+x.foreach(show)
+document.getElementById("demo").innerHTML = html;
+}
+
+function show(y){
+html += '<div class="feeditem"><div class="feedtitle">'+y.autor+'</div><div class="feedhtml">'+y.html+'</div></div>';
+}
+
+</script>
+</body>
+</html>
