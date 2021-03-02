@@ -44,6 +44,10 @@ function showfeed(x){
 
 x.forEach(show);
 document.getElementById("feedx").innerHTML = html;
+  var script = document.createElement('script');
+script.src = "https://platform.twitter.com/widgets.js";
+document.getElementsByTagName('head')[0].appendChild(script);
+
 }
 
 function show(y){
@@ -51,6 +55,6 @@ html += '<div class="feeditem"><div class="feedtitle">'+y.autor+'</div><div clas
 }
 
 </script>
-  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ 
 </body>
 </html>
